@@ -242,7 +242,6 @@ function drawDam(){X.save();X.translate(~~bOff,0);
   }
   X.strokeStyle='rgba(220,240,255,.42)';X.lineWidth=2;X.beginPath();X.moveTo(RL,1);X.lineTo(RR,1);X.stroke();
   X.strokeStyle='rgba(30,70,120,.38)';X.lineWidth=2;X.beginPath();X.moveTo(RL,dh);X.lineTo(RR,dh);X.stroke();
-X.restore();}
 function drawChunks(){X.save();X.translate(~~bOff,0);
   for(const c of bchunks){
     X.save();X.translate(c.x,c.y);X.rotate(c.ang);
@@ -257,7 +256,6 @@ function drawChunks(){X.save();X.translate(~~bOff,0);
     X.beginPath();X.moveTo(c.pts[0][0],c.pts[0][1]);c.pts.forEach(([a,b])=>X.lineTo(a,b));X.closePath();X.stroke();
     X.restore();
   }
-X.restore();}
 function drawPaws(){
   for(const pw of paws){
     const t=pw.t,isL=pw.side==='L',py=pw.y;
@@ -303,7 +301,6 @@ function drawPaws(){
     }
     X.restore();
   }
-X.restore();}
 function drawMps(){X.save();X.translate(~~bOff,0);
   for(const m of mps){
     if(m.got)continue;
@@ -314,7 +311,6 @@ function drawMps(){X.save();X.translate(~~bOff,0);
     X.fillStyle='#7a5010';X.font='bold 8px monospace';X.textAlign='center';X.textBaseline='middle';X.fillText('MAP',0,0);
     X.restore();
   }
-X.restore();}
 function drawPlayer(){
   if(!P.alive)return;
   const{x,y,w,h}=P,wob=Math.sin(fc*.12)*1.5;

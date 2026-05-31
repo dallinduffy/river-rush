@@ -240,7 +240,6 @@ function drawWhirlpools(){X.save();X.translate(~~bOff,0);
     }
     X.globalAlpha=1;X.restore();
   }
-X.restore();X.restore();}
 function drawMps(){X.save();X.translate(~~bOff,0);
   for(const m of mps){
     if(m.got)continue;
@@ -251,7 +250,6 @@ function drawMps(){X.save();X.translate(~~bOff,0);
     X.fillStyle='#7a5010';X.font='bold 8px monospace';X.textAlign='center';X.textBaseline='middle';X.fillText('MAP',0,0);
     X.restore();
   }
-X.restore();}
 function drawPlayer(){
   if(!P.alive)return;
   const{x,y,w,h}=P,wob=Math.sin(fc*.12)*1.5;
