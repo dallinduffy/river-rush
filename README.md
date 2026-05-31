@@ -2,7 +2,7 @@
 
 A browser-based kayaking adventure game — paddle through 5 wild worlds, dodge obstacles, collect map pieces, and defeat each world's boss.
 
-**[▶ Play Now](https://YOUR-USERNAME.github.io/river-rush)**
+**[▶ Play Now](https://dallinduffy.github.io/river-rush)**
 
 ---
 
@@ -32,7 +32,7 @@ Each world unlocks after clearing the previous one. Best scores are saved locall
 All worlds are self-contained HTML files — no build step, no dependencies.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/river-rush
+git clone https://github.com/dallinduffy/river-rush
 cd river-rush
 open index.html   # macOS
 # or just double-click index.html in your file explorer
